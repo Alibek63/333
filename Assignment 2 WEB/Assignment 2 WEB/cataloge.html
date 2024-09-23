@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Jetix</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" href="jetix-logo.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="jetix-logo.jpg" alt="Jetix Logo" width="30" height="30" class="d-inline-block align-top">
+                Jetix
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cataloge.html">Каталог моделей</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="extr.html">Акции и новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Support.html">Поддержка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-primary me-2">Вход</a>
+                    <a href="#" class="btn btn-primary">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mt-4">
+        <section class="catalog mb-5">
+            <h1 class="mb-4">Каталог</h1>
+            
+            <!-- Filters -->
+            <div class="row mb-4">
+                <div class="col-lg-4 mb-3">
+                    <h2>Особенности</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="4g">
+                                <label class="form-check-label" for="4g">4G и видеозвонки</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gps">
+                                <label class="form-check-label" for="gps">GPS навигация</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="wifi">
+                                <label class="form-check-label" for="wifi">Wi-Fi подключение</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="waterproof">
+                                <label class="form-check-label" for="waterproof">Водостойкость</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <h2>Возраст</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="preschool">
+                                <label class="form-check-label" for="preschool">Дошкольники</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="school">
+                                <label class="form-check-label" for="school">Школьники</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h2>Цвет</h2>
+                    <div class="d-flex">
+                        <div class="form-check me-3">
+                            <input class="form-check-input" type="checkbox" id="red" name="color">
+                            <label class="form-check-label" for="red">Красный</label>
+                        </div>
+                        <div class="form-check me-3">
+                            <input class="form-check-input" type="checkbox" id="pink" name="color">
+                            <label class="form-check-label" for="pink">Розовый</label>
+                        </div>
+                        <div class="form-check me-3">
+                            <input class="form-check-input" type="checkbox" id="black" name="color">
+                            <label class="form-check-label" for="black">Черный</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="grey" name="color">
+                            <label class="form-check-label" for="grey">Серый</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products -->
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <img src="watch1.jpg" class="card-img-top" alt="JETIX QF45 (Wi-Fi)">
+                        <div class="card-body">
+                            <h5 class="card-title">JETIX QF45 (Wi-Fi)</h5>
+                            <p class="card-text">2199 руб</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <img src="watch1.jpg" class="card-img-top" alt="JETIX QF45 (Anti Lost Edition)">
+                        <div class="card-body">
+                            <h5 class="card-title">JETIX QF45 (Anti Lost Edition)</h5>
+                            <p class="card-text">2199 руб</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Description Section -->
+        <section class="description mb-5">
+            <h2 class="mb-4">Смарт-часы для детей</h2>
+            <p>JETIX специализируется на продаже детских смарт-часов. Мы предлагаем лучшие решения для родителей, которые хотят быть в курсе местоположения и безопасности своих детей...</p>
+        </section>
+
+        <!-- Popular Products (Cards) Section -->
+        <section class="three-cards mb-5">
+            <h2 class="mb-4">Популярные товары</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="watch1.jpg" class="card-img-top" alt="Card 1">
+                        <div class="card-body">
+                            <p class="card-text">Лучшие детские смарт-часы 2022 года</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="watch1.jpg" class="card-img-top" alt="Card 2">
+                        <div class="card-body">
+                            <p class="card-text">Детские смарт-часы JETIX QF45</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="watch1.jpg" class="card-img-top" alt="Card 3">
+                        <div class="card-body">
+                            <p class="card-text">5 лучших детских смарт-часов JETIX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Videos Section (Bootstrap Carousel) -->
+        <section class="videos mb-5">
+            <h2 class="mb-4">Видео</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="video1.jpg" class="d-block w-100" alt="Video 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Лучшие детские смарт-часы 2022 года</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="video1.jpg" class="d-block w-100" alt="Video 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Детские смарт-часы JETIX QF45</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="video1.jpg" class="d-block w-100" alt="Video 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>5 лучших детских смарт-часов JETIX</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer class="bg-dark text-light py-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="jetix-logo.jpg" alt="Jetix Logo" width="50">
+                <p class="mt-2">Эксперт GPS часов</p>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">О бренде</a></li>
+                    <li><a href="#" class="text-light">Каталог моделей</a></li>
+                    <li><a href="#" class="text-light">Видео</a></li>
+                    <li><a href="#" class="text-light">Акции и новости</a></li>
+                    <li><a href="#" class="text-light">Поддержка</a></li>
+                    <li><a href="#" class="text-light">Доставка и оплата</a></li>
+                    <li><a href="#" class="text-light">Магазин</a></li>
+                    <li><a href="#" class="text-light">Проверить оригинальность</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex justify-content-around">
+                    <a href="#"><img src="1.jpg" alt="Facebook" width="30"></a>
+                    <a href="#"><img src="2.jpg" alt="Instagram" width="30"></a>
+                    <a href="#"><img src="3.jpg" alt="Twitter" width="30"></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>Authors: Alibek, Talgat</p>
+            <p>Group: SE-2317</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

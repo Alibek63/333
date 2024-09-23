@@ -1,0 +1,299 @@
+/* Удаляем глобальные стили, так как Bootstrap уже предоставляет стили сброса */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Убираем стили для header, так как Navbar Bootstrap уже обрабатывает layout */
+.header {
+    background-color: white;
+}
+
+/* Используем классы Bootstrap для nav, links, и buttons */
+.main-nav ul {
+    list-style: none;
+}
+
+.main-nav ul li a {
+    font-weight: bold;
+    color: #333;
+}
+
+.account .btn {
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.account .btn.register-btn {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.account .btn:hover {
+    background-color: #ffcccc;
+}
+
+/* Каталог и разделы фильтров */
+.catalog {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.catalog h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.filters {
+    margin: 40px 0;
+}
+
+.features h2, .age-group h2, .color-selection h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Используем утилиты Bootstrap для списков и цветов */
+.color-options .color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.color.red {
+    background-color: red;
+}
+
+.color.pink {
+    background-color: pink;
+}
+
+.color.black {
+    background-color: black;
+}
+
+.color.grey {
+    background-color: grey;
+}
+
+/* Стиль продуктов */
+.product {
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.product img {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* Описание раздела */
+.description {
+    padding: 100px;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.description h2 {
+    font-size: 2.5em;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+/* Видео галерея */
+.videos {
+    padding: 100px;
+    background-color: #fff;
+}
+
+/* Видеокарточки - использованы стандартные Bootstrap утилиты */
+.video img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Footer - использованы утилиты Bootstrap */
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    position: relative;
+    border-top: 5px solid #ff0000; /* Верхняя граница для акцента */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: left;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-logo p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ff0000; /* Цвет ссылок при наведении */
+}
+
+.footer-content div:not(:last-child)::after {
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: #555;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.social-media a img {
+    max-width: 30px;
+    margin-right: 10px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.social-media a img:hover {
+    transform: scale(1.1);
+}
+
+/* Контактная информация с иконками */
+.contact-info li {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info li img {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.contact-info li span {
+    font-size: 1em;
+}
+
+/* Адаптивные стили для футера */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content div:not(:last-child)::after {
+        display: none;
+    }
+
+    footer ul li {
+        margin-bottom: 15px;
+    }
+
+    footer ul li a {
+        font-size: 1.1em;
+    }
+
+    .footer-logo img {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Информация об авторах */
+.authors {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* Карточки продуктов */
+.three-cards {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.three-cards h2 {
+    font-size: 2.5em;
+    color: #ff0000;
+    margin-bottom: 40px;
+}
+
+.card-wrapper {
+    gap: 20px;
+}
+
+.card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    flex: 1;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.authors {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
